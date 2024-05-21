@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            display: flex;
+            width: 884px;
+            height: 346px;
+            /* background-color: orange; */
+            margin: auto;
+            margin-top: 50px;
+        }
+        .pic {
+            width: 230px;
+            height: 346px;
+            margin: 0 24px;
+            /* background-color: aquamarine; */
+        }
+        .text {
+            display: flex;
+            width: 580px;
+            height: 346px;
+            /* background-color:pink; */
+        }
+        .pic p {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .button {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+        .text_flex {
+            display: flex;
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+            /* justify-content: space-between; */
+            height: 346px;
+        }
+        .text_img {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 5px;
+            border-top: 1px dashed #BBBBBB;
+            font-size: 14px;
+            width: 280px;
+        }
+        .text_img div {
+            display: flex;
+            align-items: center;
+        }
+        #span {
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+            padding: 15px 10px;
+        }
+        .text_span {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic">
+            <p>
+                <span style="color: #d01027;">200+</span>
+                <span>基因编程成功细胞</span>
+            </p>
+            <svg width="230" height="230" style="background-color: pink;">
+                <circle cx="540.2" cy="258.1" r="39"></circle>
+            </svg>
+            <div class="button">
+                <button>查看全部细胞</button>
+            </div>
+
+        </div>
+        <div class="text">
+            <div class="text_flex">
+                <div class="text_img">
+                    <div><img src="./2.svg">呼吸系统</div>
+                    <div>+</div>
+                </div>
+                <div class="text_span">
+                    <div id="span">
+                        <span>仓鼠肺细胞(V79)</span>
+                        <span>人咽鳞癌细胞(FaDu)</span>
+                        <span>人支气管上皮细胞(16HBE)</span>
+                        <span>人正常肺上皮细胞(BEAS-2B)</span>
+                        <span>人非小细胞肺癌细胞(HCC827)</span>
+                        <span>人非小细胞肺癌细胞(NCI-H1299)</span>
+                        <span>人肺鳞癌细胞(NCI-H226)</span>
+                        <span>人肺鳞癌细胞(SK-MES-1)</span>
+                        <span>人肺癌细胞(NCI-H520)</span>
+                        <span>人肺癌细胞(Calu-1)</span>
+                        <span>人肺癌细胞(A549)</span>
+                    </div>
+                </div>
+                <div class="text_img">
+                    <div><img src="./3.svg">循环系统</div>
+                    <div>+</div>
+                </div>
+                <div class="text_span">
+                    <div id="span">
+                        <span>小鼠成肌细胞(C2C12)</span>
+                        <span>人冠状动脉内皮细胞株(HCAEC)</span>
+                        <span>小鼠心肌细胞(HL-1)</span>
+                        <span>大鼠心肌细胞(H9C2)</span>
+                        <span>人脐静脉内皮细胞(HUVEC)</span>
+                    </div>
+                </div>
+                <div class="text_img">
+                    <div><img src="./4.svg">内分泌系统</div>
+                    <div>+</div>
+                </div>
+                <div class="text_span">
+                    <div id="span">
+                        <span>人乳腺癌细胞(MCF7)</span>
+                        <span>小鼠胰岛素瘤β细胞(NIT-1)</span>
+                        <span>人乳腺癌细胞(JIMT-1)</span>
+                        <span>人乳腺管癌细胞(T-47D)</span>
+                        <span>人原位胰腺腺癌细胞(BxPC-3)</span>
+                        <span>小鼠胰腺腺泡细胞(266-6)</span>
+                        <span>人前列腺癌细胞(VCaP)</span>
+                        <span>人胰腺癌细胞(MIA PaCa-2)</span>
+                        <span>小鼠髓样乳腺癌细胞(E0771)</span>
+                        <span>小鼠胰腺癌细胞(Pan02)</span>
+                        <span>人转移胰腺腺癌细胞(AsPC-1)</span>
+                        <span>人乳腺腺癌细胞(SK-BR-3)</span>
+                        <span>人胰腺癌细胞(PANC-1)</span>
+                        <span>小鼠乳腺癌细胞(4T1)</span>
+                        <span>人乳腺癌细胞(ZR-75-1)</span>
+                        <span>人乳腺癌细胞(MDA-MB-231)</span>
+                    </div>
+                </div>
+                <div class="text_img">
+                    <div><img src="./5.svg">脑和神经系统</div>
+                    <div>+</div>
+                </div>
+                <div class="text_span">
+                    <div id="span">
+                        <span>人胶质瘤细胞(U251MG)</span>
+                        <span>小鼠小胶质细胞(BV2)</span>
+                        <span>人脑微血管内皮细胞(hCMEC/D3)</span>
+                        <span>小鼠颅顶前骨细胞亚克隆(MC3T3-E1 Subclone 14)</span>
+                        <span>人脑星形胶质母细胞瘤(U-87 MG)</span>
+                        <span>人脑星形胶质母细胞瘤(U-87 MG)</span>
+                        <span>大鼠胶质瘤细胞(C6)</span>
+                        <span>小鼠神经母细胞瘤细胞(Neuro-2a)</span>
+                        <span>人神经母细胞瘤细胞(SK-N-SH)</span>
+                    </div>
+                </div>
+                <div class="text_img">
+                    <div><img src="./6.svg">血液、淋巴系统</div>
+                    <div>+</div>
+                </div>
+                <div class="text_span">
+                    <div id="span">
+                        <span>人B淋巴瘤细胞(Su-DHL-4)</span>
+                        <span>弥漫大B细胞淋巴瘤细胞(OCI-LY3)</span>
+                        <span>人弥漫大B淋巴瘤细胞(U2932)</span>
+                        <span>人急性非B非T淋巴细胞白血病(Reh)</span>
+                        <span>人慢性髓原白血病细胞(K-562)</span>
+                        <span>人白血病T淋巴细胞(Jurkat, Clone E6-1)</span>
+                        <span>大鼠嗜碱性细胞白血病细胞(RBL-2H3)</span>
+                        <span>人单核细胞白血病细胞(THP-1)</span>
+                        <span>猪肺泡巨噬细胞(3D4/21)</span>
+                        <span>小鼠单核巨噬细胞白血病细胞(RAW264.7)</span>
+                    </div>
+                </div>
+                <div class="text_img">
+                    <div><img src="./7.svg">泌尿系统</div>
+                    <div>+</div>
+                </div>
+                <div class="text_span">
+                    <div id="span">
+                        <span>小鼠前列腺癌细胞(RM-1)</span>
+                        <span>大鼠肾上腺嗜铬细胞瘤细胞(PC-12)</span>
+                        <span>远端肾单位细胞(Distal nephron cell line（JU4s）)</span>
+                        <span>狗肾细胞(MDCK)</span>
+                        <span>人前列腺癌细胞(22RV1)</span>
+                        <span>人胚肾细胞(293T)</span>
+                        <span>人胚肾细胞(HEK293)</span>
+                        <span>人膀胱移行细胞癌细胞(T24)</span>
+                        <span>人膀胱癌细胞(5637)</span>
+                        <span>人膀胱癌细胞(TCCSUP)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text_flex">
+                    <div class="text_img">
+                        <div><img src="./8.svg">消化系统</div>
+                        <div>+</div>
+                    </div>
+                    <div class="text_span">
+                        <div id="span">
+                            <span>人结肠腺癌细胞(LS174T)</span>
+                            <span>猪小肠上皮细胞(IPEC-J2)</span>
+                            <span>人肝癌细胞(HepaRG)</span>
+                            <span>小鼠肝癌细胞(Hepa 1-6)</span>
+                            <span>小鼠肝癌细胞(H22)</span>
+                            <span>人肝癌细胞(SMMC-7721)</span>
+                            <span>人肾癌细胞(ACHN)</span>
+                            <span>非洲绿猴肾细胞(Vero)</span>
+                            <span>人肾透明细胞腺癌细胞(786-0)</span>
+                            <span>人食管鳞癌细胞(KYSE-30)</span>
+                            <span>人食管鳞癌细胞(KYSE-150)</span>
+                            <span>人胃腺癌细胞(AGS)</span>
+                            <span>人胃癌细胞(SGC-7901)</span>
+                            <span>人胃癌细胞(HGC-27)</span>
+                            <span>人肝胆管癌细胞(RBE)</span>
+                            <span>人肝癌细胞(HuH-7)</span>
+                            <span>人肝癌细胞(Hep3B)</span>
+                            <span>人肝癌细胞(Hep G2)</span>
+                            <span>人正常肝细胞(L-02)</span>
+                            <span>人结肠腺癌肺转移细胞(T84)</span>
+                            <span>人结直肠腺癌细胞(Caco-2)</span>
+                            <span>人结直肠腺癌细胞(NCI-H716)</span>
+                            <span>人结直肠腺癌上皮细胞(DLD-1)</span>
+                            <span>小鼠结肠癌细胞(CT26.WT)</span>
+                            <span>小鼠结肠癌细胞(MC38)</span>
+                            <span>人结肠癌细胞(COLO 205)</span>
+                            <span>人结肠腺癌细胞(RKO)</span>
+                            <span>人结肠癌细胞(HT-29)</span>
+                            <span>人结肠癌细胞(SW620)</span>
+                            <span>人结肠癌细胞(SW480)</span>
+                            <span>人结肠癌细胞株(HCT 116)</span>
+                        </div>
+                    </div>
+                    <div class="text_img">
+                        <div><img src="./9.svg">骨、关节、软组织、皮肤系统</div>
+                        <div>+</div>
+                    </div>
+                    <div class="text_span">
+                        <div id="span">
+                            <span>小鼠骨样细胞(MLO-Y4)</span>
+                            <span>成釉细胞瘤(hTERT-AM)</span>
+                            <span>小鼠鳞状细胞癌细胞(SCC7)</span>
+                            <span>小鼠骨髓瘤细胞(Sp2/0-Ag14)</span>
+                            <span>人皮肤鳞癌细胞(A431)</span>
+                            <span>小鼠皮肤黑色素瘤细胞(B16-F10)</span>
+                            <span>人黑色素瘤细胞(M14)</span>
+                            <span>人恶性黑色素瘤细胞(A-375)</span>
+                            <span>人纤维肉瘤(HT-1080)</span>
+                            <span>人骨肉瘤细胞(U-2 OS)</span>
+                            <span>人骨肉瘤细胞(MG-63)</span>
+                        </div>
+                    </div>
+                    <div class="text_img">
+                        <div><img src="./10.svg">眼耳鼻喉口系统</div>
+                        <div>+</div>
+                    </div>
+                    <div class="text_span">
+                        <div id="span">
+                            <span>人视网膜色素上皮细胞(ARPE-19)</span>
+                            <span>人眼脉络膜黑色素瘤细胞(OCM-1)</span>
+                            <span>人口腔鳞癌细胞(HSC3)</span>
+                            <span>人鼻咽癌细胞(C666-1)</span>
+                            <span>鼻咽癌细胞(CNE2Z)</span>
+                            <span>人鼻咽癌细胞(NPC-43)</span>
+                            <span>大鼠穆勒细胞(rmc-1)</span>
+                        </div>
+                    </div>
+                    <div class="text_img">
+                        <div><img src="./11.svg">生殖系统</div>
+                        <div>+</div>
+                    </div>
+                    <div class="text_span">
+                        <div id="span">
+                            <span>人卵巢癌细胞(OVCAR-3)</span>
+                            <span>人绒毛膜滋养层细胞(HTR-8/SVneo)</span>
+                            <span>人卵巢腺癌细胞(CAOV3)</span>
+                            <span>小鼠睾丸间质细胞(TM3)</span>
+                            <span>小鼠促性腺激素腺瘤细胞(Lbetat2)</span>
+                            <span>人卵巢癌细胞(SK-OV-3)</span>
+                            <span>仓鼠卵巢细胞亚株(CHO-K1)</span>
+                            <span>小鼠胚胎成纤维细胞(NIH/3T3)</span>
+                            <span>人宫颈癌细胞(HeLa 229)</span>
+                            <span>人宫颈癌细胞(HeLa)</span>
+                        </div>
+                    </div>
+                    <div class="text_img">
+                        <div><img src="./12.svg">干细胞</div>
+                        <div>+</div>
+                    </div>
+                    <div class="text_span">
+                        <div id="span">
+                            <span>人胚胎干细胞(H9)</span>
+                            <span>人胚胎干细胞(H1)</span>
+                            <span>诱导型多能干细胞 ipsc( ipsc)</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        //让兄弟元素生成相同点击事件
+        // let textevent = document.getElementsByClassName("text_img");
+        // for (let i = 0; i < textevent.length; i++) {
+        //     let textevents = textevent[i];
+        //     textevents.addEventListener("click", function() {
+        //         let spanevents = this.nextElementSibling; // 获取当前点击元素的下一个兄弟元素
+        //         if (spanevents.style.display === "none") {
+        //         spanevents.style.display = "block";
+        //         } else {
+        //             spanevents.style.display = "none";
+        //         }
+        //     });
+        // }
+
+        $(document).ready(function() {
+            $(".text_img").click(function() {
+                let spanevents = $(this).next()
+                if (spanevents.css("display") === "none") {
+                    spanevents.css("display", "block")
+                } else {
+                    spanevents.css("display", "none")
+                }
+            })
+        })
+   
+        // document.querySelectorAll('.button').forEach(function(button) {
+        //     button.addEventListener('click', function() {
+        //         // 有没有custom， 没有custom 展开全部 ；有custom 收起全部
+        //         console.log(button.className)
+        //         if (button.className.indexOf("custom") !== -1) {
+        //             document.querySelectorAll('.text_span').forEach(function(text_span) {   //使用forEach方法遍历这些标签
+        //             text_span.style.display = "none";
+        //             button.classList.remove("custom") //删除class属性custom
+        //         });
+        //         } else {
+        //             button.classList.add('custom')
+        //             document.querySelectorAll('.text_span').forEach(function(text_span) {   
+        //                 text_span.style.display = "block";
+        //             });
+        //         }
+        //     });
+        // });
+
+        $(".button").each(function() {     //each遍历每一个button
+        $(this).click(function() {  
+        console.log($(this).attr("class"));  //在控制台打印 button class类名
+        if ($(this).hasClass("custom")) {     //hasclass 检查类名      检查名为 custom的class类  有则执行操作    没有则在else 后面执行操作
+            $(".text_span").each(function() {
+                $(this).css("display", "none");
+            });
+            $(this).removeClass("custom");    //删除class类
+        } else {
+            $(this).addClass("custom");       //添加class类
+            $(".text_span").each(function() {
+                $(this).css("display", "block");
+            });
+        }
+    });
+});
+
+
+    </script>
+</body>
+</html>
